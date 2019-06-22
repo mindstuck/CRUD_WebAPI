@@ -1,0 +1,10 @@
+app 
+{
+  [1]departments
+  {
+    [1.1]department       {};
+    [1.2]departments-list {};
+    [1.3]worker           {};
+    [1.4]workers-list     {};
+  }
+}

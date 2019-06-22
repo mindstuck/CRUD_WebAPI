@@ -1,0 +1,66 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/*input text-boxes*/
+input.ng-dirty.ng-invalid {
+    border-color: #dc3545;
+}
+
+input.ng-valid.ng- {
+    border-color: #28a745;
+}
+
+.green-icon {
+    color: #28a745;
+}
+
+.red-icon {
+    color: #dc3545;
+}
+
+
+
+#toast-container > div {
+    opacity: 1;
+}
+
+html, body { 
+    height: 100%; 
+}
+body {
+     margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+mat-tab-header {
+    margin-bottom: 20px;
+}
+
+.fa-edit:hover {
+    cursor: pointer;
+}
+.fa-trash-alt:hover {
+    cursor: pointer;
+}
+
+.table {
+   margin-right: 220px; 
+}
+
+tfoot {
+    text-align: center;
+    font-style: italic;
+}
+
+.hide {
+    display: none;
+}
+
+/* mat-table */
+
+mat-footer-row mat-footer-cell {
+    justify-content: center;
+    font-style: italic;
+}
+
+.mat-row:hover {
+    background-color: #EFF0F1;
+}

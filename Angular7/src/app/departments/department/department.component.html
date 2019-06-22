@@ -1,0 +1,28 @@
+<form #form="ngForm" autocomplete="on" (submit)="onSubmit(form)">
+  <input type="hidden" name="Id" [value]="service.formDataDep.Id">
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+          <i class="fas fa-building" [class.green-icon]="DepartmentName.valid" [class.red-icon]="DepartmentName.invalid && DepartmentName.dirty"></i>
+        </div>
+      </div>
+      <input name="DepartmentName" #DepartmentName="ngModel" [(ngModel)]="service.formDataDep.DepartmentName" 
+       class="form-control" placeholder="Название департамента" required minlength="3" maxlength="30">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+          <i class="fas fa-globe" [class.green-icon]="Location.valid" [class.red-icon]="Location.invalid && Location.dirty"></i>
+        </div>
+      </div>
+      <input name="Location" #Location="ngModel" [(ngModel)]="service.formDataDep.Location" 
+       class="form-control" placeholder="Местоположение" required minlength="3" maxlength="30">
+    </div>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-success btn-lg btn-block" [disabled]="form.invalid"  title="Заполните все поля для ввода"><i class="fas fa-database"></i> Подтвердить</button>
+  </div>
+</form>
